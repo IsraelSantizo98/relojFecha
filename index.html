@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yhi3tir.css">
     <title>Reloj</title>
 </head>
 <body>
-    <div class="container">
-        <div class="horas">10</div>
-        <div class="minutos">56</div>
-        <div class="meridiano">AM</div>
-    </div>
+    <section class="main d-flex-center">
+        <div class="container d-flex-center">
+            <div class="horas d-flex-center">
+                <p class="margin-right" id="horaReloj"></p>
+            </div>
+            <div class="minutos d-flex-center">
+                <p class="margin-right" id="minutoReloj"></p>
+            </div>
+            <div class="segundo d-flex-center">
+                <p class="margin-right" id="segundoReloj"></p>
+            </div>
+            <div class="meridiano d-flex-center">
+                <p class="margin-right" id="meridianoReloj"></p>
+            </div>
+        </div>
+        <div class="fecha section">
+            <p id="fechaReloj"></p>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>
