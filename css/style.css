@@ -1,0 +1,74 @@
+:root{
+    --tipografiaDisplay: ohm-bold, sans-serif;
+    --tipografiaFecha: input-serif, sans-serif;
+    --fontWeight: 700;
+    --fontStyle: normal;
+    --fontColor: #fff;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*10px = 1rem*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.section{
+    margin-top: 4rem;
+}
+.d-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-size: 8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: var(--tipografiaDisplay);
+    font-weight: var(--fontWeight);
+    font-style: var(--fontStyle);
+    color: var(--fontColor);
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+.container{
+    border-radius: 4rem;
+    padding: 6rem;
+    background: rgb(57, 188, 224);
+    background: linear-gradient(90deg, rgba(57, 188, 224,1) 0%, rgba(42,163,236,1) 39%, rgba(24,134,251,1)100%,rgba(27,38,79,1) 191654%);
+    border: 1.8rem solid #000;
+}
+.horas,
+.minutos,
+.meridiano, 
+.segundo{
+    margin-right: 1rem;
+}
+.segundo{
+    font-size: 6rem;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+p{
+    text-align: center;
+    margin: 0;
+}
+.fecha{
+    font-family: var(--tipografiaFecha);
+}
+.fecha p{
+    color: #000;
+}
+@media (max-width: 480px) {
+    body{
+        font-size: 1.6;
+    }
+    .container{
+        padding: 2rem;
+    }
+}
